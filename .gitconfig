@@ -1,0 +1,30 @@
+[user]
+        name = luyuekai
+        email = luyuekaibupt@163.com
+[credential]
+        helper = store
+[color]
+        ui = true
+[alias]
+        st = status
+        co = checkout
+        ci = commit
+        br = branch
+        unstage = reset HEAD
+        last = log -1
+        lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+        d = difftool
+[diff]
+        tool = vimdiff
+[difftool]
+        prompt = false
+[alias]
+        st = status
+
+[filter "lfs"]
+        clean = git-lfs clean -- %f
+        smudge = git-lfs smudge -- %f
+        process = git-lfs filter-process
+        required = true
+[legit]
+        uiLang = zh
